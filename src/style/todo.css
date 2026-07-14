@@ -1,0 +1,10 @@
+.todoContainer {
+    display: flex;
+    align-items: center;
+    gap: 1;
+}
+
+input[type=text]{
+    height: 30px;
+    width: 300px;
+}

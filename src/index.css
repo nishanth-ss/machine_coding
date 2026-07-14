@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+
+.layout-container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.sidebar{
+    width: 15%;
+    background-color: #ff7979;
+    padding: 1rem;
+}
+.sidebar .sidebarItem h3{
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sidebar .sidebarItem.active h3 span{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: green;
+    display: inline-block;
+    transition: 1s;
+}
+.mainbar{
+    width: 85%;
+    margin: 1rem;
+    background-color: #ccc;
+    padding: 1rem;
+    border-radius: 10px;
+}
+button{
+    width: 200px;
+    height: 40px;
+    background-color: #30336b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:disabled{
+    cursor: not-allowed;
+}
+button.delete{
+     background-color: red;
+}
+.btn-active{
+    background-color: #ff7979;
+}
