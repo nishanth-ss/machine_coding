@@ -1,0 +1,50 @@
+[
+    {
+      "id": 1,
+      "label": "Electronics",
+      "children": [
+        {
+          "id": 2,
+          "label": "Laptops",
+          "children": [
+            {
+              "id": 3,
+              "label": "MacBook"
+            },
+            {
+              "id": 4,
+              "label": "Dell"
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "label": "Mobiles",
+          "children": [
+            {
+              "id": 6,
+              "label": "iPhone"
+            },
+            {
+              "id": 7,
+              "label": "Samsung"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "label": "Furniture",
+      "children": [
+        {
+          "id": 9,
+          "label": "Table"
+        },
+        {
+          "id": 10,
+          "label": "Chair"
+        }
+      ]
+    }
+  ]

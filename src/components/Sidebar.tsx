@@ -11,7 +11,8 @@ const Sidebar = () => {
     const siderbarItems: SidebarItem[] = [
         { id: 1, item: "TodoList", route: "todo" },
         { id: 2, item: "Timer", route: "timer" },
-        { id: 2, item: "Datatable", route: "datatable" },
+        { id: 3, item: "Datatable", route: "datatable" },
+        { id: 4, item: "Nested Checkbox", route: "nested_checkbox" },
     ]
     return (
         <div className='sidebar'>

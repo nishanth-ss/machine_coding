@@ -6,6 +6,7 @@ import { lazy, Suspense } from 'react';
 const TodoListPage = lazy(()=>import('./page/TodoList'))
 const TimerPage = lazy(()=>import('./page/Timer'))
 const Datable = lazy(()=>import('./page/Datable'))
+const NestedCheckBox = lazy(()=>import('./page/NestedCheckbox'))
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
             <Route path='todo' element={<TodoListPage />} />
             <Route path='timer' element={<TimerPage />} />
             <Route path='datatable' element={<Datable />} />
+            <Route path='nested_checkbox' element={<NestedCheckBox />} />
           </Route>
 
           <Route path='*' element={<h1>Not found</h1>} />
