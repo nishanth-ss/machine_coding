@@ -7,6 +7,7 @@ const TodoListPage = lazy(()=>import('./page/TodoList'))
 const TimerPage = lazy(()=>import('./page/Timer'))
 const Datable = lazy(()=>import('./page/Datable'))
 const NestedCheckBox = lazy(()=>import('./page/NestedCheckbox'))
+const OTPInputPage = lazy(()=>import('./page/OTPInput'))
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
             <Route path='todo' element={<TodoListPage />} />
             <Route path='timer' element={<TimerPage />} />
             <Route path='datatable' element={<Datable />} />
+            <Route path='otp_input' element={<OTPInputPage />} />
             <Route path='nested_checkbox' element={<NestedCheckBox />} />
           </Route>
 

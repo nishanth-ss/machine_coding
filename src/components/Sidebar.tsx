@@ -13,6 +13,7 @@ const Sidebar = () => {
         { id: 2, item: "Timer", route: "timer" },
         { id: 3, item: "Datatable", route: "datatable" },
         { id: 4, item: "Nested Checkbox", route: "nested_checkbox" },
+        { id: 4, item: "OTP Input", route: "otp_input" },
     ]
     return (
         <div className='sidebar'>
