@@ -55,7 +55,6 @@ const CheckBoxes = ({ data, checked, setChecked }: CheckBoxesProps) => {
 
 const NestedCheckBox = () => {
     const [checked, setChecked] = useState<Record<number, boolean>>({});
-    console.log(checked)
 
     return (
         <div>

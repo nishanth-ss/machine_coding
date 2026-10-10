@@ -32,9 +32,9 @@ const OTPInput = () => {
             <h1>OTP Input</h1>
             <div style={{ display: "flex", gap: "5px", margin: "2rem" }}>
                 {
-                    inputArr?.map((input, index) => {
+                    inputArr?.map((_, index) => {
                         return <div key={index}>
-                            <input type="text" value={inputArr[index]}
+                            <input className='bg-white border-black! border-2' type="text" value={inputArr[index]}
                                 ref={input => { inputRef.current[index] = input }}
                                 style={{ width: "50px", height: "50px", textAlign: "center", fontSize: "20px" }}
                                 onChange={(e) => handleChange(e.target.value, index)}

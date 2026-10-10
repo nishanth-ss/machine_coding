@@ -1,0 +1,48 @@
+[
+    {
+        "id": 7,
+        "name": "public",
+        "isFolder": true,
+        "children": [
+            {
+                "id": 8,
+                "name": "index.html",
+                "isFolder": false
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "name": "src",
+        "isFolder": true,
+        "children": [
+            {
+                "id": 2,
+                "name": "components",
+                "isFolder": true,
+                "children": [
+                    {
+                        "id": 3,
+                        "name": "Mainbar.tsx",
+                        "isFolder": false
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "name": "App.tsx",
+                "isFolder": false
+            },
+            {
+                "id": 5,
+                "name": "index.css",
+                "isFolder": false
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "name": "package.json",
+        "isFolder": false
+    }
+]
