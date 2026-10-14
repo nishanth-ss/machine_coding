@@ -10,6 +10,7 @@ const NestedCheckBox = lazy(()=>import('./page/NestedCheckbox'))
 const OTPInputPage = lazy(()=>import('./page/OTPInput'))
 const FileFolderPage = lazy(()=>import('./page/FileFolderExplorer'))
 const ProgressBarPage = lazy(()=>import('./page/ProgressBar'))
+const AccordianPage = lazy(()=>import('./page/Accordian'))
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
             <Route path='nested_checkbox' element={<NestedCheckBox />} />
             <Route path='file_folder_explorer' element={< FileFolderPage/>} />
             <Route path='progress_bar' element={< ProgressBarPage/>} />
+            <Route path='accordian' element={< AccordianPage/>} />
           </Route>
 
           <Route path='*' element={<h1>Not found</h1>} />

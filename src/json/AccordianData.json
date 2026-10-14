@@ -1,0 +1,28 @@
+
+[
+  {
+    "id": 1,
+    "title": "What is React?",
+    "content": "React is a JavaScript library used to build user interfaces."
+  },
+  {
+    "id": 2,
+    "title": "What is TypeScript?",
+    "content": "TypeScript is a programming language that adds static typing to JavaScript."
+  },
+  {
+    "id": 3,
+    "title": "What is Tailwind CSS?",
+    "content": "Tailwind CSS is a utility-first CSS framework for styling web applications."
+  },
+  {
+    "id": 4,
+    "title": "What is an API?",
+    "content": "An API allows different software applications to communicate with each other."
+  },
+  {
+    "id": 5,
+    "title": "What is JSON?",
+    "content": "JSON is a lightweight data format used to store and exchange information."
+  }
+]

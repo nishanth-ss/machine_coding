@@ -16,6 +16,7 @@ const Sidebar = () => {
         { id: 5, item: "OTP Input", route: "otp_input" },
         { id: 6, item: "File/Folder Explorer", route: "file_folder_explorer" },
         { id: 7, item: "Progress Bar", route: "progress_bar" },
+        { id: 8, item: "Accordian", route: "accordian" },
     ]
     return (
         <div className='sidebar'>
