@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "name": "Nishanth",
+    "subject": [
+      {
+        "english": 80,
+        "maths": 90,
+        "science": 90,
+        "tamil": 89,
+        "social": 98
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Arun",
+    "subject": [
+      {
+        "english": 85,
+        "maths": 88,
+        "science": 92,
+        "tamil": 90,
+        "social": 87
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Priya",
+    "subject": [
+      {
+        "english": 95,
+        "maths": 89,
+        "science": 94,
+        "tamil": 96,
+        "social": 91
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Karthik",
+    "subject": [
+      {
+        "english": 78,
+        "maths": 85,
+        "science": 80,
+        "tamil": 88,
+        "social": 82
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Divya",
+    "subject": [
+      {
+        "english": 92,
+        "maths": 95,
+        "science": 89,
+        "tamil": 94,
+        "social": 96
+      }
+    ]
+  }
+]

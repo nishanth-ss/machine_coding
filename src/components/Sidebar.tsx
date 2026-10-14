@@ -15,6 +15,7 @@ const Sidebar = () => {
         { id: 4, item: "Nested Checkbox", route: "nested_checkbox" },
         { id: 5, item: "OTP Input", route: "otp_input" },
         { id: 6, item: "File/Folder Explorer", route: "file_folder_explorer" },
+        { id: 7, item: "Progress Bar", route: "progress_bar" },
     ]
     return (
         <div className='sidebar'>

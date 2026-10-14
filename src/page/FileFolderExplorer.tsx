@@ -18,7 +18,7 @@ interface IListData {
   handleDelete: (deleteID: number) => void;
 }
 
-const List: React.FC<IListData> = ({ nodeList, addNodeToTheList,handleDelete }) => {
+const List: React.FC<IListData> = ({ nodeList, addNodeToTheList, handleDelete }) => {
   const [isExpanded, setIsExpanded] = useState<Record<string | number, boolean>>({});
 
   return <div>
@@ -35,7 +35,7 @@ const List: React.FC<IListData> = ({ nodeList, addNodeToTheList,handleDelete }) 
               }
             >{isExpanded[node.id] ? <FiMinusCircle /> : <FaPlusCircle />}</span>}
             <span>{node.name}</span>
-            <span onClick={()=>handleDelete(node.id)}><MdDelete color='red' /></span>
+            <span onClick={() => handleDelete(node.id)}><MdDelete color='red' /></span>
             {node.isFolder && <span onClick={() => addNodeToTheList(node.id)}><FaFolderPlus /></span>}
           </div>
           {isExpanded[node.id] && <span className='pl-5! block'>
@@ -52,6 +52,21 @@ const FileFolderExplorer = () => {
 
   const addNodeToTheList = (parentID: number) => {
 
+    const name = prompt("Enter file or folder name:");
+    if (!name?.trim()) return;
+
+    const type = prompt("Enter type: file or folder");
+    if (!type) return;
+
+    const isFolder = type.toLowerCase() === "folder";
+
+    const newNode: IJsonData = {
+      id: Date.now(),
+      name: name.trim(),
+      isFolder,
+      children: [],
+    };
+
     const updateNodeList = (list: IJsonData[]): IJsonData[] => {
       return list?.map((node: IJsonData) => {
         if (node.id === parentID) {
@@ -59,7 +74,7 @@ const FileFolderExplorer = () => {
             ...node,
             children: [
               ...(node?.children ?? []),
-              { id: Date.now(), name: "newfile", isFolder: false, childrem: [] }
+              {...newNode}
             ]
           }
         }
@@ -76,13 +91,13 @@ const FileFolderExplorer = () => {
 
   const handleDelete = (id: number) => {
 
-    const deleteNode = (list: IJsonData[]): IJsonData[]=>{
-      return list.filter((val)=> val.id !== id).map((childval)=> ({
+    const deleteNode = (list: IJsonData[]): IJsonData[] => {
+      return list.filter((val) => val.id !== id).map((childval) => ({
         ...childval,
         children: childval.children ? deleteNode(childval.children) : []
       }))
     }
-    
+
     setData(prev => deleteNode(prev))
   }
 
