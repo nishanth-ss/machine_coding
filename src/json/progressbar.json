@@ -4,10 +4,10 @@
     "name": "Nishanth",
     "subject": [
       {
-        "english": 80,
-        "maths": 90,
-        "science": 90,
-        "tamil": 89,
+        "english": 30,
+        "maths": 50,
+        "science": 70,
+        "tamil": 60,
         "social": 98
       }
     ]

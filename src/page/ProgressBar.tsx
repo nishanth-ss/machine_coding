@@ -16,10 +16,11 @@ interface ISubject {
 }
 
 const ProgressBarComp = ({ progress = 60 }) => {
+    const bgcolor = progress < 35 ? "bg-red-400" : progress < 60 ? "bg-yellow-400" : progress < 75 ? "bg-orange-400" : "bg-green-400"
     return (
         <span className="flex h-8 w-full items-center rounded-4xl bg-gray-200">
             <span
-                className="flex h-8 items-center justify-center rounded-4xl bg-green-400"
+                className={`flex h-8 items-center justify-center rounded-4xl ${bgcolor}`}
                 style={{ width: `${progress}%` }}
             >
                 {progress}%

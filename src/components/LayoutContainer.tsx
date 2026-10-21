@@ -4,8 +4,10 @@ import Mainbar from './Mainbar'
 const LayoutContainer = () => {
   return (
     <div className='layout-container'>
-        <Sidebar />
+      <Sidebar />
+      <div className="main-content">
         <Mainbar />
+      </div>
     </div>
   )
 }

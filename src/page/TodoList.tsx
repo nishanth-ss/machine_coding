@@ -67,8 +67,8 @@ const TodoList = () => {
         <div>
             <h1>TodoList</h1>
             <form action="" onSubmit={handleAddTodo}>
-                <input className='input-style' ref={inputRef} type="text" value={todo} onChange={(e) => setTodo(e.target.value)} />
-                <button type='submit'>Add Todo</button>
+                <input className='bg-gray-400 p-3 mr-2 rounded-md' ref={inputRef} type="text" value={todo} onChange={(e) => setTodo(e.target.value)} />
+                <button type='submit' className='mr-2'>Add Todo</button>
                 <button onClick={handleDeleteAllTodo} type='button'>Delete Todo</button>
             </form>
             {

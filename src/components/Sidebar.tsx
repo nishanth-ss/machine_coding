@@ -17,10 +17,12 @@ const Sidebar = () => {
         { id: 6, item: "File/Folder Explorer", route: "file_folder_explorer" },
         { id: 7, item: "Progress Bar", route: "progress_bar" },
         { id: 8, item: "Accordian", route: "accordian" },
+        { id: 9, item: "Product Catalog", route: "product_catalog" },
+        { id: 10, item: "Practise", route: "practise" },
     ]
     return (
         <div className='sidebar'>
-            <h1>Machine Coding</h1>
+            <h1 className="text-2xl font-bold">Machine Coding</h1>
 
             {
                 siderbarItems.map((val) => (
