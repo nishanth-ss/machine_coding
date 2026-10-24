@@ -12,6 +12,7 @@ const FileFolderPage = lazy(()=>import('./page/FileFolderExplorer'))
 const ProgressBarPage = lazy(()=>import('./page/ProgressBar'))
 const AccordianPage = lazy(()=>import('./page/Accordian'))
 const ProductCatalogPage = lazy(()=>import('./page/ProductCatalog'))
+const EmployeeDetailsPage = lazy(()=>import('./page/EmployeeDetails'))
 const PractisePage = lazy(()=>import('./page/Practise'))
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
             <Route path='progress_bar' element={< ProgressBarPage/>} />
             <Route path='accordian' element={< AccordianPage/>} />
             <Route path='product_catalog' element={< ProductCatalogPage/>} />
+            <Route path='employee_details' element={< EmployeeDetailsPage/>} />
             <Route path='practise' element={< PractisePage/>} />
           </Route>
 
