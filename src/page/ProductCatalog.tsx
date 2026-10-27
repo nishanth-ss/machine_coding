@@ -77,7 +77,7 @@ const ProductCatalog = () => {
             </div>
             {
                 Array.from({length:totalPages || 0},(_,i)=>(
-                    <button key={i}>{i+1}</button>
+                    <button className='btn' key={i}>{i+1}</button>
                 ))
             }
         </div>

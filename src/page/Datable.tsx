@@ -100,19 +100,19 @@ const Datable = () => {
                 display: "flex",
                 gap: "10px"
             }}>
-                <button onClick={handlePrev} disabled={page === 0}>prev</button>
+                <button className="btn" onClick={handlePrev} disabled={page === 0}>prev</button>
                 {
                     Array.from({ length: totalPages }, (_, i) => (
                         <button
                             key={i}
-                            className={page === i ? "btn-active" : ""}
+                            className={`btn ${page === i ? "btn-active" : ""}`}
                             onClick={() => setPage(i)}
                         >
                             {i + 1}
                         </button>
                     ))
                 }
-                <button onClick={handleNext} disabled={page === totalPages - 1}>next</button>
+                <button onClick={handleNext} className="btn" disabled={page === totalPages - 1}>next</button>
             </div>
             <h1 style={{ display: "flex", justifyContent: "center" }}>Page {page + 1} of {totalPages}</h1>
         </div>

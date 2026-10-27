@@ -30,8 +30,8 @@ const EmployeeCard = ({ data, setSingleEmployeeData, setViewForm, setData }: IEm
   return (
     <div className='p-5 bg-gray-100'>
       <div className="flex justify-end">
-        <button className="bg-green-400! text-black!" onClick={() => { setSingleEmployeeData(data); setViewForm(true) }}>Update</button>
-        <button className="bg-red-400! text-black!" onClick={() => handleDelete(data.id)}>Delete</button>
+        <button className="bg-green-400! text-black! btn" onClick={() => { setSingleEmployeeData(data); setViewForm(true) }}>Update</button>
+        <button className="bg-red-400! text-black! btn" onClick={() => handleDelete(data.id)}>Delete</button>
       </div>
       <div className='flex items-center justify-center'>
         <img src={profileImg} alt={data?.name} className='w-48 h-48 rounded-4xl' />

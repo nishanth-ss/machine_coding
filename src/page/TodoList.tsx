@@ -68,8 +68,8 @@ const TodoList = () => {
             <h1>TodoList</h1>
             <form action="" onSubmit={handleAddTodo}>
                 <input className='bg-gray-400 p-3 mr-2 rounded-md' ref={inputRef} type="text" value={todo} onChange={(e) => setTodo(e.target.value)} />
-                <button type='submit' className='mr-2'>Add Todo</button>
-                <button onClick={handleDeleteAllTodo} type='button'>Delete Todo</button>
+                <button type='submit' className='mr-2 btn'>Add Todo</button>
+                <button className='btn' onClick={handleDeleteAllTodo} type='button'>Delete Todo</button>
             </form>
             {
                 todoList?.length > 0 && todoList?.map((val: TodoList, index: number) => {
@@ -77,8 +77,8 @@ const TodoList = () => {
                         <div key={index} className='todoContainer'>
                             <input type="checkbox" checked={val.completed} onChange={() => handleChange(val.id)} />
                             <h1>{val.todoMessage}</h1>
-                            <button className='edit' onClick={() => handleEdit(val)}>Edit</button>
-                            <button className='delete' onClick={() => handleDelete(val.id)}>Delete</button>
+                            <button className='edit btn' onClick={() => handleEdit(val)}>Edit</button>
+                            <button className='delete btn' onClick={() => handleDelete(val.id)}>Delete</button>
                         </div>
                     )
                 })

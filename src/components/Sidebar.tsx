@@ -19,7 +19,9 @@ const Sidebar = () => {
         { id: 8, item: "Accordian", route: "accordian" },
         { id: 9, item: "Product Catalog", route: "product_catalog" },
         { id: 10, item: "Employee Data", route: "employee_details" },
-        { id: 11, item: "Practise", route: "practise" },
+        { id: 11, item: "Tab Form", route: "tab_form" },
+        { id: 12, item: "Star Rating", route: "star_rating" },
+        { id: 100, item: "Practise", route: "practise" },
     ]
     return (
         <div className='sidebar'>

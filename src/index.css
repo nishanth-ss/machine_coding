@@ -47,7 +47,7 @@ a{
     box-sizing: border-box;
     border-radius: 10px;
 }
-button{
+button.btn{
     width: 200px;
     height: 40px;
     background-color: #30336b;
